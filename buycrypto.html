@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+    <style>
+        .box {
+            height: 600px;
+        }
+        
+        h1 {
+            display: inline;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        h2 {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+        .hid {
+            display: none;
+        }
+        
+        .dis {
+            display: contents;
+        }
+        
+        #ver-comissiones,
+        #ver-comissiones1 {
+            cursor: pointer;
+        }
+        
+        #ver-comissiones:hover,
+        #ver-comissiones1:hover {
+            text-decoration: underline;
+        }
+        
+        .inc-height {
+            height: 680px;
+        }
+        
+        .comprar,
+        .vender {
+            cursor: pointer;
+        }
+        
+        #ven {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="body">
+        <div class="box" id="com">
+            <div class="main-heading">
+                <h1 class="comprar">Comprar</h1>
+                <h1>|</h1>
+                <h1 class="vender" id="Vender" style="color: rgb(142, 142, 142);">Vender</h1>
+            </div>
+            <span>
+                Disfruta de la forma más segura, rápida y eficiente de comprar cripto en México
+            </span>
+            <h2>Cryptomoneda</h2>
+
+            <select name="" id="slick" style="border-radius: 24px;">
+                <option value="btc" data-description="" data-imagesrc="img/bitcoin.png">BTC - Bitcoin</option>
+                <option value="eth" data-description="" data-imagesrc="img/ethereum.png">ETH - Ethereum</option>
+                <option value="xrp" data-description="" data-imagesrc="img/xrp.png">XRP - Ripple</option>
+                <option value="bch" data-description="" data-imagesrc="img/bch.png">BCH - Bitcoin Cash</option>
+                <option value="LTC" data-description="" data-imagesrc="img/ltc.png">LTC - Litecoin</option>
+                <option value="dai" data-description="" data-imagesrc="img/dai.png">DAI - Dai</option>
+                <option value="doge" data-description="" data-imagesrc="img/dogecoin.png">DOGE - Dogecoin</option>
+            </select>
+
+            <table>
+                <tr>
+                    <td>
+                        <h2>Cantidad</h2>
+                    </td>
+                    <td style="text-align: right;">
+                        <h2>MXN</h2>
+                    </td>
+                </tr>
+            </table>
+            <input type="number" id="quantity" pattern="\d*" title="Numbers only, please.">
+            <table class="table">
+                <tr>
+                    <td class="td-left" id="td_left">Precio de BTC</td>
+                    <td class="td-right bl" id="preciobtc">$0.00 MXN</td>
+                </tr>
+                <tr>
+                    <td class="td-left" id="Obt">BTC</td>
+                    <td class="td-right bl" id="obtendras">0.00 BTC</td>
+                </tr>
+                <tr>
+                    <td class="td-left">Comissiones</td>
+                    <td class="td-right" id="ver-comissiones">Ver comissiones</td>
+                </tr>
+                <tr class="hid">
+                    <td></td>
+                    <td class="td-right">Red: MXN $50.50<br>Processamiento: MXN $2.93<br>Plataforma: MXN $1.01</td>
+                </tr>
+                <tr>
+                    <td class="td-left">Total</td>
+                    <td class="td-right" id="total">$0.00 MXN</td>
+                </tr>
+            </table>
+            <button class="btn-con" id="Calcular">Calcular</button>
+        </div>
+        <!-- box  -->
+        <div class="box" id="ven">
+            <div class="main-heading">
+                <h1 class="comprar" id="Comprar" style="color: rgb(142, 142, 142);">Comprar</h1>
+                <h1>|</h1>
+                <h1 class="vender">Vender</h1>
+            </div>
+            <span>
+                La forma mas rapida, barata, y segura de comprar y vender crypto en Mexico
+            </span>
+            <h2>Cryptomoneda</h2>
+
+            <select name="" id="slick1" style="border-radius: 24px;">
+                <option value="btc" data-description="" data-imagesrc="img/bitcoin.png">BTC - Bitcoin</option>
+                <option value="eth" data-description="" data-imagesrc="img/ethereum.png">ETH - Ethereum</option>
+                <option value="xrp" data-description="" data-imagesrc="img/xrp.png">XRP - Ripple</option>
+                <option value="bch" data-description="" data-imagesrc="img/bch.png">BCH - Bitcoin Cash</option>
+                <option value="LTC" data-description="" data-imagesrc="img/ltc.png">LTC - Litecoin</option>
+                <option value="dai" data-description="" data-imagesrc="img/dai.png">DAI - Dai</option>
+                <option value="doge" data-description="" data-imagesrc="img/dogecoin.png">DOGE - Dogecoin</option>
+            </select>
+
+
+            <table>
+                <tr>
+                    <td>
+                        <h2>Cantidad</h2>
+                    </td>
+                    <td style="text-align: right;">
+                        <h2>BTC</h2>
+                    </td>
+                </tr>
+            </table>
+            <input type="number" id="quantity1" pattern="\d*" title="Numbers only, please.">
+            <table class="table">
+                <tr>
+                    <td class="td-left" id="td_left1">Precio de BTC</td>
+                    <td class="td-right bl" id="preciobtc1">$0.00 MXN</td>
+                </tr>
+                <tr>
+                    <td class="td-left" id="Obt1">BTC</td>
+                    <td class="td-right bl" id="obtendras1">0.00 MXN</td>
+                </tr>
+                <tr>
+                    <td class="td-left">Comissiones</td>
+                    <td class="td-right" id="ver-comissiones1">Ver comissiones</td>
+                </tr>
+                <tr class="hid">
+                    <td></td>
+                    <td class="td-right">Red: MXN $50.50<br>Processamiento: MXN $2.93<br>Plataforma: MXN $1.01</td>
+                </tr>
+                <tr>
+                    <td class="td-left">Total</td>
+                    <td class="td-right" id="total1">$0.00 BTC</td>
+                </tr>
+            </table>
+            <button class="btn-con" id="Calcular1">Calcular</button>
+        </div>
+    </div>
+
+
+    <script src="jquery.ddslick.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            var preciobtc = "";
+            var obtendras = "";
+            var total = "";
+
+
+            $("#ver-comissiones").click(function() {
+                $(".hid").toggleClass("dis");
+                $(".box").toggleClass("inc-height");
+            });
+
+            $("#ver-comissiones1").click(function() {
+                $(".hid").toggleClass("dis");
+                $(".box").toggleClass("inc-height");
+            });
+
+
+            $("#slick").ddslick({
+                width: "100%",
+                imagePosition: "left",
+                selectText: "Select Your social network",
+                onSlected: function(data) {
+                    $("#selected").html(data.selectedData.value);
+                    console.log($("#selected").text());
+                }
+            });
+            $("#slick1").ddslick({
+                width: "100%",
+                imagePosition: "left",
+                selectText: "Select Your social network",
+                onSlected: function(data) {
+                    $("#selected").html(data.selectedData.value);
+                    console.log($("#selected").text());
+                }
+            });
+
+            var coin_symbol;
+            var coin_symbol1;
+            $(".dd-options").click(function() {
+                var drop_down_value = $(".dd-selected label").text();
+                var coin = drop_down_value.split('-');
+                coin_symbol = coin[0].slice(0, -1);
+                coin_symbol1 = coin[1].substr(-4, 3);
+                console.log(coin);
+                document.getElementById("td_left").innerHTML = "Precio de " + coin_symbol;
+                document.getElementById("Obt").innerHTML = "" + coin_symbol;
+                if (coin_symbol1 == "OGE") {
+                    coin_symbol1 = "DOGE"
+                }
+                console.log(coin_symbol1);
+                document.getElementById("td_left1").innerHTML = "Precio de " + coin_symbol1;
+                document.getElementById("Obt1").innerHTML = "" + coin_symbol1;
+
+
+            }); //
+
+            var tax = 54.44;
+            var api = "http://api.coinlayer.com/api/live?access_key=d3d6e5eb48ff846ddd13364f5e6d576c"
+            $("#Calcular").click(function() {
+                fetch(api)
+                    .then((response) => response.json())
+                    .then((data) => {
+                        for (var x in data) {
+                            if (data[x]["" + coin_symbol + ""] != undefined) {
+                                var price = data[x]["" + coin_symbol + ""];
+                                var btc_price = data[x].BTC;
+                            }
+                            if (coin_symbol == undefined) {
+                                var price = data[x].BTC;
+                                var btc_price = data[x].BTC;
+                            }
+                        }
+                        if(coin_symbol == undefined){
+                            coin_symbol = "BTC";
+                        }
+                        var mxn_price = price * 19.71;
+                        var quantity = $("#quantity").val();
+                        document.getElementById("preciobtc").innerHTML = "$" + (mxn_price).toFixed(2) + " MXN";
+                        document.getElementById("obtendras").innerHTML = "$" + (price / btc_price).toFixed(7) + " BTC";
+                        document.getElementById("total").innerHTML = "$" + (parseFloat(quantity) + tax).toFixed(2) + " " + coin_symbol;
+                        console.log(coin_symbol);
+                    });
+            });
+
+            $("#Calcular1").click(function() {
+                fetch(api)
+                    .then((response) => response.json())
+                    .then((data) => {
+                        for (var x in data) {
+                            if (data[x]["" + coin_symbol1 + ""] != undefined) {
+                                var price = data[x]["" + coin_symbol1 + ""];
+                            }
+                            if (coin_symbol == undefined) {
+                                var price = data[x].BTC;
+                            }
+                        }
+                        var mxn_price = price * 19.71;
+                        var quantity = $("#quantity1").val();
+                        document.getElementById("preciobtc1").innerHTML = "$" + (mxn_price).toFixed(2) + " MXN";
+                        document.getElementById("obtendras1").innerHTML = "$" + ((price * 19.71)*quantity).toFixed(2) + " MXN";
+                        if(coin_symbol1 == undefined){
+                            coin_symbol1 = "BTC";
+                        }
+                        document.getElementById("total1").innerHTML = "$" + (parseFloat(quantity) + tax).toFixed(2) + " " + coin_symbol1;
+                        console.log(coin_symbol);
+                    });
+            });
+
+            $("#Comprar").click(function() {
+                $("#com").css("display", "block");
+                $("#ven").css("display", "none");
+            });
+
+            $("#Vender").click(function() {
+                $("#com").css("display", "none");
+                $("#ven").css("display", "block");
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,439 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+body{
+    background-color: #282125;
+}
+
+.PageContainer{
+    position: relative;
+    min-height: 100vh;
+}
+
+.contentWrap{
+    padding-bottom: 2.5rem;
+}
+
+a:visited { 
+    text-decoration: none;
+    color: #bb542e;
+   }
+
+.container{
+    width: 100%;
+    height: 100%;
+    background: #322f33;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+	-moz-box-shadow: 0 8px 6px -6px black;
+	box-shadow: 0 8px 6px -6px black;
+}
+
+.menu ul{
+    display: inline-flex;
+    margin: 20px 20px;
+
+}
+
+.menu li{
+    list-style: none;
+    margin: 15px 40px;
+    color: #e66739;
+    cursor: pointer;
+}
+
+#svgLogo{
+    margin-left: 25px;
+    padding-right: 48px;
+}
+
+.signupbtn{
+    top: 25px;
+    right: 80px;
+    position: absolute;
+    text-decoration: none;
+    color: #e66739;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#322f33, #322f33), radial-gradient(circle at top left, #bb542e, #a2a5a8);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+.signupbtn span{
+    display: block;
+    padding: 8px 22px;
+}
+
+.banner{
+    width: 80%;
+    height: 70%;
+    top: 25%;
+    left: 130px;
+    position: absolute;
+    color: black;
+}
+
+.descriptionText{
+    width: 50%;
+    float: left;
+}
+
+.descriptionText h1{
+    font-size: 50px;
+    width: 650px;
+    position: relative;
+    margin-left: 40px;
+    color: white;
+}
+
+.appPic{
+    width: 50%;
+    float: right;
+}
+
+.buybtn{
+    margin-top: 60px;
+    margin-left: 40px;
+    display: inline-flex;
+    height: 50px;
+    width: 300px;
+
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#282125, #282125), radial-gradient(circle at top left, #bb542e, #a2a5a8);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    
+}
+
+.buybtn h3{
+    color: white;
+    padding: 11px 0px 0px 50px;
+}
+
+.waitText{
+    color: white;
+    font-size: large;
+    margin-top: 300px;
+    margin-bottom: 500px;
+    text-shadow: 0 1px 0 #a2a5a8,
+    0 2px 0 #322f33,
+    0 3px 0 #322f33,
+    0 4px 0 #322f33,
+    0 5px 0 #322f33,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
+    text-align: center;
+}
+
+.aboutUsHeading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.bringingHeading{
+    text-align: center;
+    font-size: 1.5cm;
+    color: white;
+    margin-top: 60px;
+}
+
+.explenationParagraph{
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: stretch;
+    font-size: 16px;
+    line-height: 135%;
+}
+
+.bringingEffect{
+    text-transform: uppercase;
+    font-weight: 700;
+    background: linear-gradient(to right,#e66739 10%, #ec7d55 50%, #cf4613 60%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 3s linear infinite;
+    display: inline-block;
+}
+
+@keyframes textclip {
+to {
+    background-position: 200% center;
+}
+}
+
+#footer1{
+    position: absolute;
+    bottom: 0;
+}
+
+.FooterContainer{
+    padding: 4rem 0 4rem 0;
+}
+
+.Footer{
+    width: 100%;
+    height: 40vh;
+    color: #bb542e;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    
+}
+
+.LogoPart{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10rem;
+}
+
+.aboutUsList{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10rem;
+}
+
+.contactUsList{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10rem;
+}
+
+.mediaList{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10rem;
+}
+
+.Footer h3{
+    margin-bottom: 2rem;
+}
+
+.Footer a{
+    color: #e66739;
+    text-decoration: none;
+    margin-bottom: 0.7rem;
+}
+
+.Footer a:hover{
+    color: #bb542e;
+    transition: 0.3s ease-out;
+}
+
+.footerEmailForm h2{
+    margin-bottom: 2rem;    
+}
+
+#emailFooter{
+    width: 200px;
+    height: 50px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+#emailFooter::placeholder{
+    color: #a2a5a8;
+}
+
+#emailButtonFooter{
+    width: 100px;
+    height: 50px;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #a2a5a8;
+    font-size: 1rem;
+}
+
+#emailButtonFooter:hover{
+    cursor: pointer;
+}
+
+.ovalBuying{
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    width: 400px;
+    background-color: #bb542e;
+    border-radius: 10%;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+	-moz-box-shadow: 0 8px 6px -6px black;
+	box-shadow: 0 8px 6px -6px black;
+}
+
+.ovalBuying select{
+    position: absolute;
+    margin: 60px 0px 0px 50px;
+    left: 0;
+    top: 0;
+}
+
+.option-selection{
+    background-color: white;
+    color: black;
+    height: 50px;
+    width: 18rem;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.oval-explenation-p{
+    position: absolute;
+    margin: 8rem 0px 0px 57px;
+    left: 0;
+    top: 0;
+    color: black
+}
+
+.oval-choosing-crypto{
+    position: absolute;
+    
+    left: 0;
+    top: 0;
+}
+
+.oval-choosing-crypto p{
+    margin: 12rem 0px 0px 57px;
+}
+
+.oval-choosing-crypto select{
+    background-color: white;
+    color: black;
+    height: 50px;
+    width: 18rem;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    text-align: center;
+    margin: 14rem 0px 0px 57px;
+}
+
+.oval-choosing-crypto option{
+    background-repeat:no-repeat;
+    background-position:bottom left;
+    padding-left:30px;
+}
+
+.values-part1{
+    position: static;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.values-part1 h1{
+    text-align: center;
+    color: white;
+}
+
+.values-table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.values-security-part{
+    padding-top: 75px;
+    padding-right: 250px;
+    padding-bottom: 80px;
+    position: static;
+    text-align: center;
+    color: white;
+}
+
+.values-security-part img{
+    height: auto;
+    width: 200px;
+}
+
+
+.values-communication-part{
+    padding-top: 75px;
+    padding-bottom: 80px;
+    position: static;
+    text-align: center;
+    color: white;
+}
+
+.values-communication-part img{
+    height: auto;
+    width: 200px;
+}
+
+.values-efficiency-part{
+    padding-right: 250px;
+    padding-bottom: 80px;
+    position: static;
+    text-align: center;
+    color: white;
+}
+
+.values-efficiency-part img{
+    height: auto;
+    width: 200px;
+}
+
+.values-fairness-part{
+    padding-bottom: 80px;
+    position: static;
+    text-align: center;
+    color: white;
+}
+
+.values-fairness-part img{
+    height: auto;
+    width: 200px;
+}
+
+.values-accountability-part{
+    padding-right: 250px;
+    padding-bottom: 80px;
+    position: static;
+    text-align: center;
+    color: white;
+}
+
+.values-accountability-part img{
+    height: auto;
+    width: 200px;
+}
+
+.values-simplicity-part{
+    padding-bottom: 80px;
+    position: static;
+    text-align: center;
+    color: white;
+}
+
+.values-simplicity-part img{
+    height: auto;
+    width: 200px;
+}
